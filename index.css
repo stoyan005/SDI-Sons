@@ -4,6 +4,8 @@ html {
     scroll-behavior: smooth;
 }
 
+
+/* ! THIS IS FOR THE BODY */
 body {
     text-align: center;
     font-family: "Montserrat", sans-serif;
@@ -12,6 +14,8 @@ body {
     color: #000000;
 }
 
+
+/* ! THIS IS FOR THE NAVIGATION BAR */
 .navbar {
     display: flex;
     justify-content: right;
@@ -19,6 +23,7 @@ body {
     background-color: #1E3A5F;
     font-weight: 500;
     padding: 0.5rem;
+    text-shadow: 1px 1px #919191;
 }
 
 .navbar nav ul {
@@ -55,4 +60,35 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+
+/* ! THIS IS FOR THE ABOUT CONTAINER */
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 2rem;
+    width: 60%;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.information-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 2rem;
+    margin-left: auto;
+    width: 60%;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.about-container h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
