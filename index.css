@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: right;
     align-items: center;
-    background-color: rgb(124, 124, 111);
+    background-color: #1E3A5F;
     font-weight: 500;
     padding: 0.5rem;
 }
@@ -30,20 +30,18 @@ body {
 }
 
 .navbar nav li a {
-    color: #000000;
+    display: block;
+    color: #ffffff;
     letter-spacing: 1px;
     border-radius: 15px;
-    font-size: 1.5rem;
-    padding: 10px 10px;
+    font-size: 1rem;
+    padding: 5px 5px;
     text-decoration: none;
-    transition: all 0.4s ease;
+    transition: 0.4s ease;
 }
 
 .navbar nav li a:hover {
-    background: #ffffff;
-    color: #000000;
-    transform: translateY(-10px);
-    box-shadow: 0 3px 6px;
+    transform: scale(1.25);
 }
 
 @keyframes floatInUp {
