@@ -24,7 +24,6 @@ body {
     font-weight: 500;
     padding: 0.5rem;
     text-shadow: 1px 1px #919191;
-
 }
 
 .navbar nav ul {
@@ -67,17 +66,19 @@ body {
 /* ! THIS IS FOR THE ABOUT CONTAINER */
 .about-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem;
     margin: 2rem;
     width: 60%;
     border-radius: 10px;
-    border: 2px solid black;
+    box-shadow: 0px 0px 10px 3px #000000;
 }
 
 .information-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem;
@@ -85,11 +86,12 @@ body {
     margin-left: auto;
     width: 60%;
     border-radius: 10px;
-    border: 2px solid black;
+    box-shadow: 0px 0px 10px 3px #000000;
 }
 
-.about-container h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.about-container h1,
+.information-container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
