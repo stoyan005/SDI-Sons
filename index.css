@@ -95,3 +95,9 @@ body {
     font-weight: bold;
     margin-bottom: 10px;
 }
+
+.section,
+.black-bg {
+    height: 100vh;
+    background-color: #888888;
+}
