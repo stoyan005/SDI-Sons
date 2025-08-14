@@ -66,7 +66,6 @@ body {
     background-color: #008000;
     color: #ffffff;
     padding: 10px 20px;
-    margin: 10px;
     font-weight: bold;
     transition: 0.3s ease;
 }
@@ -162,6 +161,13 @@ body {
     background-color: #888888;
 }
 
+.section h1 {
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
 /* ! THIS IS THE HORIZONTAL LINE DESIGN */
 hr {
     border: none;
@@ -170,4 +176,58 @@ hr {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     margin: 40px 0;
 
+}
+
+/* ! THIS IS FOR THE PHOTO GALLERY DISPLAY */
+.photo-container {
+    padding: 1rem;
+}
+
+.slideshow {
+    position: relative;
+    max-width: 27rem;
+    margin: 0 auto;
+}
+
+.slide {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 15px;
+    height: 36rem;
+}
+
+
+.slide img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: contain;
+    image-rendering: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.slide-bar {
+    display: flex;
+    column-gap: 2rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slide-bar a {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #615e5e;
+    transition: 0.4s ease;
+}
+
+.slide-bar a:hover {
+    background-color: #444;
+    transform: scale(1.15);
 }

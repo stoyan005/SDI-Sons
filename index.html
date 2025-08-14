@@ -21,16 +21,15 @@
 
         <nav class="navigation-bar">
             <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li class="contacts"><a href="#">Contacts</a></li>
             </ul>
         </nav>
     </header>
 
 
-    <div class="about-container">
+    <div class="about-container" id="services">
         <h1>SDI&Sons</h1>
         <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
             lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
@@ -47,9 +46,24 @@
             lorem ipsum lorem ipsum lorem ipsum</p>
     </div>
 
-    <hr />
+    <div class="section black-bg" id="gallery">
+        <h1>Gallery</h1>
 
-    <div class="section black-bg"></div>
+        <section class="photo-container">
+            <div class="slideshow">
+                <div class="slide">
+                    <img id="photo-1" src="photo4.webp" alt="photo with the logo of the company" />
+                    <img id="photo-2" src="photo2.webp" alt="photo with the logo of the company" />
+                    <img id="photo-3" src="photo3.webp" alt="photo with the logo of the company" />
+                </div>
+                <div class="slide-bar">
+                    <a href="#photo-1"></a>
+                    <a href="#photo-2"></a>
+                    <a href="#photo-3"></a>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 
 </html>
