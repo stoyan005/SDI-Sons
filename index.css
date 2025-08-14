@@ -17,14 +17,17 @@ body {
 
 /* ! THIS IS FOR THE NAVIGATION BAR */
 .navbar {
+    position: sticky;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2c5994;
+    background-color: #1b5b17;
     font-weight: 500;
     padding: 0.5rem;
     height: 70px;
     overflow: hidden;
+    top: 1;
+    z-index: 1000;
 }
 
 .navbar nav ul {
@@ -61,9 +64,9 @@ body {
 
 .navbar .contacts a {
     display: inline-block;
-    border: 0px solid #000000;
+    border: 3px solid #000000;
     border-radius: 20px;
-    background-color: #008000;
+    background-color: #2c5994;
     color: #ffffff;
     padding: 10px 20px;
     font-weight: bold;
@@ -71,7 +74,7 @@ body {
 }
 
 .navbar .contacts a:hover {
-    background-color: #015401;
+    background-color: #122946;
     transform: scale(1.15);
 }
 
@@ -154,19 +157,36 @@ body {
     margin-bottom: 10px;
 }
 
-/* ! THIS IS THE NEXT SECTION OF THE WEBSITE */
-.section,
-.black-bg {
-    height: 100vh;
+/* ! THIS IS THE SECTIONS OF THE WEBSITE */
+.section-services {
+    padding-top: 1rem;
+    height: 110vh;
+    background: #bdcbde;
+}
+
+.section-gallery {
+    padding-top: 1rem;
+    height: 110vh;
     background-color: #888888;
 }
 
-.section h1 {
-    padding-top: 2rem;
-    font-size: 2rem;
-    font-weight: 700;
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 1rem;
 }
 
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #000;
+    margin: 0 10px;
+}
 
 /* ! THIS IS THE HORIZONTAL LINE DESIGN */
 hr {
@@ -179,14 +199,17 @@ hr {
 }
 
 /* ! THIS IS FOR THE PHOTO GALLERY DISPLAY */
-.photo-container {
-    padding: 1rem;
+.photo-galleries {
+    display: flex;
+    padding: 2rem;
+    align-items: flex-start;
 }
 
 .slideshow {
     position: relative;
-    max-width: 27rem;
-    margin: 0 auto;
+    max-width: 30rem;
+    margin: 0 auto 0 0;
+    padding-left: 8rem;
 }
 
 .slide {
@@ -196,7 +219,7 @@ hr {
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
     border-radius: 15px;
-    height: 36rem;
+    height: 40rem;
 }
 
 
@@ -214,7 +237,7 @@ hr {
     column-gap: 2rem;
     position: absolute;
     bottom: 1.25rem;
-    left: 50%;
+    left: 62%;
     transform: translateX(-50%);
     z-index: 1;
 }
@@ -223,11 +246,16 @@ hr {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: #615e5e;
+    background-color: #dedede;
     transition: 0.4s ease;
 }
 
 .slide-bar a:hover {
     background-color: #444;
     transform: scale(1.15);
+}
+
+footer {
+    background-color: #dce3ec;
+    height: 40vh;
 }
