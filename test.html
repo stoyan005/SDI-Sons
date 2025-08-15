@@ -2,37 +2,118 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="test.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSS Only Photo Gallery with Slide Animation</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+
+        .gallery {
+            width: 600px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background: white;
+        }
+
+        /* Hide the radio buttons */
+        input[type="radio"] {
+            display: none;
+        }
+
+        .slides {
+            display: flex;
+            width: 300%;
+            /* 3 images */
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slides img {
+            width: 600px;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        /* Slide positioning based on checked radio */
+        #slide1:checked~.slides {
+            transform: translateX(0%);
+        }
+
+        #slide2:checked~.slides {
+            transform: translateX(-33.333%);
+        }
+
+        #slide3:checked~.slides {
+            transform: translateX(-66.666%);
+        }
+
+        /* Buttons container */
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+            gap: 10px;
+        }
+
+        /* Style buttons as labels */
+        .buttons label {
+            cursor: pointer;
+            background: #ddd;
+            padding: 8px 16px;
+            border-radius: 4px;
+            user-select: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .buttons label:hover {
+            background: #bbb;
+        }
+
+        /* Highlight the active button */
+        #slide1:checked~.buttons label[for="slide1"],
+        #slide2:checked~.buttons label[for="slide2"],
+        #slide3:checked~.buttons label[for="slide3"] {
+            background: #666;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="heading">
-        <h1>about us</h1>
-        <p>we love paintingwe love paintingwe love paintingwe love paintingwe love paintingwe</p>
+
+    <div class="gallery">
+
+        <!-- Radio inputs to control slides -->
+        <input type="radio" name="slider" id="slide1" checked />
+        <input type="radio" name="slider" id="slide2" />
+        <input type="radio" name="slider" id="slide3" />
+
+        <!-- Slide images container -->
+        <div class="slides">
+            <img src="https://picsum.photos/id/1015/600/400" alt="Photo 1" />
+            <img src="https://picsum.photos/id/1016/600/400" alt="Photo 2" />
+            <img src="https://picsum.photos/id/1018/600/400" alt="Photo 3" />
+        </div>
+
+        <!-- Buttons to select slides -->
+        <div class="buttons">
+            <label for="slide1">1</label>
+            <label for="slide2">2</label>
+            <label for="slide3">3</label>
+        </div>
+
     </div>
-    <div class="container">
-        <section class="about">
-            <div class="about-image">
-                <img src="coffee.jpg">
-            </div>
-            <div class="about-content">
-                <h2>yada yada yada</h2>
-                <p>we love paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love paintingwe
-                    love paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love
-                    paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love
-                    paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love painting love
-                    paintingwe love
-                    paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love painting love
-                    paintingwe love
-                    paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love painting love
-                    paintingwe love
-                    paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love painting</p>
-            </div>
-        </section>
-    </div>
+
 </body>
 
 </html>

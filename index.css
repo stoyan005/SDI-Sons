@@ -283,28 +283,39 @@ hr {
 
 .slide-bar {
     display: flex;
-    column-gap: 2rem;
+    justify-content: center;
+    gap: 2rem;
     position: absolute;
-    bottom: 1.25rem;
-    left: 62%;
-    transform: translateX(-50%);
-    z-index: 1;
+    bottom: 1rem;
+    left: auto;
+    z-index: 10;
 }
 
+
 .slide-bar a {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    font-weight: bold;
     background-color: #dedede;
     transition: 0.4s ease;
 }
 
 .slide-bar a:hover {
     background-color: #444;
+    color: #ffffff;
     transform: scale(1.15);
 }
 
-footer {
-    background-color: #dce3ec;
-    height: 40vh;
+.copyright {
+    color: white;
+    background-color: #39397c;
+    font-size: 0.5rem;
+    padding: 1rem;
+    max-width: 100%;
 }
