@@ -366,9 +366,10 @@ hr {
 .footer_container strong::after {
     content: '';
     position: absolute;
-    background: linear-gradient(red 50%, blue 50%);
+    box-shadow: 10px 4px 12px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(to right, white 20%, green 75%, red 50%);
     border-radius: 20px;
-    height: 2.5px;
+    height: 2px;
     width: 90%;
     bottom: 0;
     left: 0;
