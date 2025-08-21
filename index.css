@@ -65,9 +65,10 @@ body {
     animation: floatInUp 0.8s ease forwards;
 }
 
+
 .navbar .contacts a {
     background-color: #1270eb;
-    color: white;
+    color: #ffffff;
     border-radius: 20px;
     padding: 10px 20px;
     font-weight: bold;
@@ -81,6 +82,7 @@ body {
     background-color: #215ba2;
     transform: scale(1.1);
 }
+
 
 /* ! THIS IS FOR ANIMATIONS */
 @keyframes floatInUp {
@@ -135,7 +137,7 @@ body {
 }
 
 .about-image {
-    flex: 0 0 auto;
+    flex: 0 1 auto;
     margin-left: 0;
     padding-right: 3rem;
 }
@@ -217,6 +219,7 @@ body {
     color: #000000;
 }
 
+
 /* ! THIS IS THE SECTIONS OF THE WEBSITE */
 .divider {
     display: flex;
@@ -244,8 +247,8 @@ hr {
     background: #444;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     margin: 40px 0;
-
 }
+
 
 /* ! THIS IS FOR THE PHOTO GALLERY DISPLAY */
 .photo-galleries {
@@ -271,7 +274,6 @@ hr {
     height: 40rem;
 }
 
-
 .slide img {
     flex: 1 0 100%;
     scroll-snap-align: start;
@@ -287,10 +289,9 @@ hr {
     gap: 2rem;
     position: absolute;
     bottom: 1rem;
-    left: auto;
+    left: 47%;
     z-index: 10;
 }
-
 
 .slide-bar a {
     display: flex;
@@ -301,7 +302,7 @@ hr {
     width: 40px;
     height: 40px;
     border-radius: 10px;
-    font-weight: bold;
+    font-weight: 600;
     background-color: #dedede;
     transition: 0.4s ease;
 }
@@ -312,10 +313,63 @@ hr {
     transform: scale(1.15);
 }
 
+
+/* ! THIS IS FOR THE COPYRIGHT */
 .copyright {
-    color: white;
+    color: #ffffff;
     background-color: #39397c;
-    font-size: 0.5rem;
-    padding: 1rem;
+    font-size: 0.6rem;
+    padding: 0.5rem;
     max-width: 100%;
+}
+
+/* ! THIS IS FOR THE FOOTER */
+.footer_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #e7e6e6;
+    gap: 10rem;
+    margin-left: 16rem;
+    margin-bottom: 2rem;
+    width: 1050px;
+    height: 300px;
+}
+
+.footer_logo img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 450px;
+    object-fit: contain;
+}
+
+.footer_container .column {
+    margin: 1rem;
+    min-width: 200px;
+}
+
+.footer_container .column p {
+    display: flex;
+    padding: 0.75rem;
+    color: #000000;
+}
+
+.footer_container strong {
+    position: relative;
+    padding-right: 1rem;
+    max-width: max-content;
+}
+
+.footer_container strong::after {
+    content: '';
+    position: absolute;
+    background: linear-gradient(red 50%, blue 50%);
+    border-radius: 20px;
+    height: 2.5px;
+    width: 90%;
+    bottom: 0;
+    left: 0;
 }
