@@ -69,31 +69,18 @@
 
         <div id="gallery" class="divider">Gallery</div>
 
-        <div class="photo-galleries">
-            <div class="slideshow">
-                <div class="slide">
-                    <img id="gallery1-photo-1" src="photo4.webp" alt="photo with the logo of the company" />
-                    <img id="gallery1-photo-2" src="photo2.webp" alt="photo with the logo of the company" />
-                    <img id="gallery1-photo-3" src="photo3.webp" alt="photo with the logo of the company" />
-                </div>
-                <div class="slide-bar">
-                    <a href="#gallery1-photo-1">1</a>
-                    <a href="#gallery1-photo-2">2</a>
-                    <a href="#gallery1-photo-3">3</a>
-                </div>
-            </div>
-
-            <div class="slideshow">
-                <div class="slide">
-                    <img id="gallery2-photo-1" src="photo1.webp" alt="another photo" />
-                    <img id="gallery2-photo-2" src="photo2.webp" alt="another photo" />
-                    <img id="gallery2-photo-3" src="photo3.webp" alt="another photo" />
-                </div>
-                <div class="slide-bar">
-                    <a href="#gallery2-photo-1">1</a>
-                    <a href="#gallery2-photo-2">2</a>
-                    <a href="#gallery2-photo-3">3</a>
-                </div>
+        <div class="photo_container">
+            <div class="image-container">
+                <img src="photo1.webp" alt="phot 1">
+                <img src="photo2.webp" alt="phot 1">
+                <img src="photo3.webp" alt="phot 1">
+                <img src="photo1.webp" alt="phot 1">
+                <img src="photo4.webp" alt="phot 1">
+                <img src="photo3.webp" alt="phot 1">
+                <img src="photo2.webp" alt="phot 1">
+                <img src="photo4.webp" alt="phot 1">
+                <img src="photo3.webp" alt="phot 1">
+                <img src="photo2.webp" alt="phot 1">
             </div>
         </div>
 
@@ -116,6 +103,19 @@
         <div class="copyright">
             <h1>Copyright © 2025 Stoyan Ivanov. All Rights Reserved.</h1>
         </div>
+        <script>
+            document.querySelectorAll('.slide-bar a').forEach(link => {
+                link.addEventListener('click', e => {
+                    e.preventDefault(); // prevent default anchor scroll
+                    const targetId = link.getAttribute('href').slice(1);
+                    const target = document.getElementById(targetId);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+                    }
+                });
+            });
+
+        </script>
 </body>
 
 </html>

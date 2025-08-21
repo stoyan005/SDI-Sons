@@ -3,117 +3,119 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>CSS Only Photo Gallery with Slide Animation</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            background: #f0f0f0;
-        }
-
-        .gallery {
-            width: 600px;
-            margin: 0 auto;
-            overflow: hidden;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            background: white;
-        }
-
-        /* Hide the radio buttons */
-        input[type="radio"] {
-            display: none;
-        }
-
-        .slides {
-            display: flex;
-            width: 300%;
-            /* 3 images */
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .slides img {
-            width: 600px;
-            height: 400px;
-            object-fit: cover;
-        }
-
-        /* Slide positioning based on checked radio */
-        #slide1:checked~.slides {
-            transform: translateX(0%);
-        }
-
-        #slide2:checked~.slides {
-            transform: translateX(-33.333%);
-        }
-
-        #slide3:checked~.slides {
-            transform: translateX(-66.666%);
-        }
-
-        /* Buttons container */
-        .buttons {
-            display: flex;
-            justify-content: center;
-            margin-top: 15px;
-            gap: 10px;
-        }
-
-        /* Style buttons as labels */
-        .buttons label {
-            cursor: pointer;
-            background: #ddd;
-            padding: 8px 16px;
-            border-radius: 4px;
-            user-select: none;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-
-        .buttons label:hover {
-            background: #bbb;
-        }
-
-        /* Highlight the active button */
-        #slide1:checked~.buttons label[for="slide1"],
-        #slide2:checked~.buttons label[for="slide2"],
-        #slide3:checked~.buttons label[for="slide3"] {
-            background: #666;
-            color: white;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="SDI_logo_transparent.webp" />
+    <link rel="stylesheet" href="test.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" />
+    <title>SDI&Sons Ltd.</title>
 </head>
 
 <body>
-
-    <div class="gallery">
-
-        <!-- Radio inputs to control slides -->
-        <input type="radio" name="slider" id="slide1" checked />
-        <input type="radio" name="slider" id="slide2" />
-        <input type="radio" name="slider" id="slide3" />
-
-        <!-- Slide images container -->
-        <div class="slides">
-            <img src="https://picsum.photos/id/1015/600/400" alt="Photo 1" />
-            <img src="https://picsum.photos/id/1016/600/400" alt="Photo 2" />
-            <img src="https://picsum.photos/id/1018/600/400" alt="Photo 3" />
+    <header class="navbar">
+        <div class="logo">
+            <a href="#"><img src="SDI_logo_transparent.webp" alt="Logo"></a>
         </div>
 
-        <!-- Buttons to select slides -->
-        <div class="buttons">
-            <label for="slide1">1</label>
-            <label for="slide2">2</label>
-            <label for="slide3">3</label>
+        <nav class="navigation-bar">
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li class="contacts"><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="section-services" id="services">
+        <div class="divider">Services</div>
+
+        <div class="about-container">
+            <section class="about">
+                <div class="about-image">
+                    <img src="roller_brush.jpg">
+                </div>
+                <div class="about-information">
+                    <h2>Our Company</h2>
+                    <p>we love paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love
+                        paintingwe
+                        love paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love paintingwe
+                        love
+                        paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love
+                        paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love painting love
+                    </p>
+                </div>
+            </section>
+        </div>
+        <div class="service-container">
+            <section class="service-about">
+                <div class="service-image">
+                    <img src="paint_buckets.jpg">
+                </div>
+                <div class="service-information">
+                    <h2>Our Services</h2>
+                    <p>Our company specialises in high-quality renovations for houses, apartments, and commercial spaces
+                        of all
+                        sizes. Our services include painting, tiling, and the installation of stone floors in bathrooms,
+                        kitchens, bedrooms, and outdoor areas. Every project is handled with attention to detail,
+                        skilled craftsmanship, and a commitment to meeting deadlines. From minor touch-ups to full-scale
+                        remodeling. With a dedicated team that focuses on
+                        quality, durability, and design, we turn everyday spaces into something exceptional.
+                    </p>
+                </div>
+            </section>
         </div>
 
-    </div>
+        <div id="gallery" class="divider">Gallery</div>
 
+        <div class="photo_container">
+            <div class="image-container">
+                <img src="photo1.webp" alt="phot 1">
+                <img src="photo2.webp" alt="phot 1">
+                <img src="photo3.webp" alt="phot 1">
+                <img src="photo1.webp" alt="phot 1">
+                <img src="photo4.webp" alt="phot 1">
+                <img src="photo3.webp" alt="phot 1">
+                <img src="photo2.webp" alt="phot 1">
+                <img src="photo4.webp" alt="phot 1">
+                <img src="photo3.webp" alt="phot 1">
+                <img src="photo2.webp" alt="phot 1">
+            </div>
+        </div>
+
+        <div id="contacts" class="divider">Contacts</div>
+
+        <section>
+            <footer class="footer_container">
+                <div class="footer_logo">
+                    <img src="SDI_logo_transparent.webp" alt="The company logo" />
+                </div>
+                <div class="column">
+                    <p><strong>Location:</strong> East London</p>
+                    <p><strong>Phone Number:</strong> +44 12345678</p>
+                    <p><strong>Email Address:</strong> example@gmail.com</p>
+                    <p><strong>Working hours:</strong> Monday - Friday: 8am-5pm</p>
+                </div>
+            </footer>
+        </section>
+
+        <div class="copyright">
+            <h1>Copyright © 2025 Stoyan Ivanov. All Rights Reserved.</h1>
+        </div>
+        <script>
+            document.querySelectorAll('.slide-bar a').forEach(link => {
+                link.addEventListener('click', e => {
+                    e.preventDefault(); // prevent default anchor scroll
+                    const targetId = link.getAttribute('href').slice(1);
+                    const target = document.getElementById(targetId);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+                    }
+                });
+            });
+
+        </script>
 </body>
 
 </html>
