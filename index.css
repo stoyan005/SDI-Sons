@@ -113,7 +113,7 @@ body {
     justify-content: flex-start;
     list-style-type: none;
     gap: 2rem;
-    padding-top: 1rem;
+    overflow-y: auto;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -180,12 +180,16 @@ body {
 
     .menu-button {
         display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 10001;
     }
 }
 
 @media(max-width: 400px) {
     .sidebar {
-        width: 100%;
+        width: 80%;
     }
 }
 
