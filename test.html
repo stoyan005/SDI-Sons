@@ -14,108 +14,45 @@
 </head>
 
 <body>
-    <header class="navbar">
-        <div class="logo">
-            <a href="#"><img src="SDI_logo_transparent.webp" alt="Logo"></a>
-        </div>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px"
+                        viewBox="0 -960 960 960" width="40px" fill="#000000">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a></li>
+            <li><a href="#">Code2</a></li>
+            <li><a href="#">Code3</a></li>
+            <li><a href="#">Code4</a></li>
+            <li><a href="#">Code5</a></li>
+            <li><a href="#">Code6</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Coding!</a></li>
+            <li class="hideOnMobile"><a href="#">Code2</a></li>
+            <li class="hideOnMobile"><a href="#">Code3</a></li>
+            <li class="hideOnMobile"><a href="#">Code4</a></li>
+            <li class="hideOnMobile"><a href="#">Code5</a></li>
+            <li class="hideOnMobile"><a href="#">Code6</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        height="40px" viewBox="0 -1000 960 960" width="40px" fill="#000000">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
 
-        <nav class="navigation-bar">
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li class="contacts"><a href="#contacts">Contacts</a></li>
-            </ul>
-        </nav>
-    </header>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.classList.add('active');
+        }
 
-    <div class="section-services" id="services">
-        <div class="divider">Services</div>
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.classList.remove('active');
+        }
 
-        <div class="about-container">
-            <section class="about">
-                <div class="about-image">
-                    <img src="roller_brush.jpg">
-                </div>
-                <div class="about-information">
-                    <h2>Our Company</h2>
-                    <p>we love paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love
-                        paintingwe
-                        love paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love paintingwe
-                        love
-                        paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love
-                        paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love painting love
-                    </p>
-                </div>
-            </section>
-        </div>
-        <div class="service-container">
-            <section class="service-about">
-                <div class="service-image">
-                    <img src="paint_buckets.jpg">
-                </div>
-                <div class="service-information">
-                    <h2>Our Services</h2>
-                    <p>Our company specialises in high-quality renovations for houses, apartments, and commercial spaces
-                        of all
-                        sizes. Our services include painting, tiling, and the installation of stone floors in bathrooms,
-                        kitchens, bedrooms, and outdoor areas. Every project is handled with attention to detail,
-                        skilled craftsmanship, and a commitment to meeting deadlines. From minor touch-ups to full-scale
-                        remodeling. With a dedicated team that focuses on
-                        quality, durability, and design, we turn everyday spaces into something exceptional.
-                    </p>
-                </div>
-            </section>
-        </div>
-
-        <div id="gallery" class="divider">Gallery</div>
-
-        <div class="photo_container">
-            <div class="image-container">
-                <img src="photo1.webp" alt="phot 1">
-                <img src="photo2.webp" alt="phot 1">
-                <img src="photo3.webp" alt="phot 1">
-                <img src="photo1.webp" alt="phot 1">
-                <img src="photo4.webp" alt="phot 1">
-                <img src="photo3.webp" alt="phot 1">
-                <img src="photo2.webp" alt="phot 1">
-                <img src="photo4.webp" alt="phot 1">
-                <img src="photo3.webp" alt="phot 1">
-                <img src="photo2.webp" alt="phot 1">
-            </div>
-        </div>
-
-        <div id="contacts" class="divider">Contacts</div>
-
-        <section>
-            <footer class="footer_container">
-                <div class="footer_logo">
-                    <img src="SDI_logo_transparent.webp" alt="The company logo" />
-                </div>
-                <div class="column">
-                    <p><strong>Location:</strong> East London</p>
-                    <p><strong>Phone Number:</strong> +44 12345678</p>
-                    <p><strong>Email Address:</strong> example@gmail.com</p>
-                    <p><strong>Working hours:</strong> Monday - Friday: 8am-5pm</p>
-                </div>
-            </footer>
-        </section>
-
-        <div class="copyright">
-            <h1>Copyright © 2025 Stoyan Ivanov. All Rights Reserved.</h1>
-        </div>
-        <script>
-            document.querySelectorAll('.slide-bar a').forEach(link => {
-                link.addEventListener('click', e => {
-                    e.preventDefault(); // prevent default anchor scroll
-                    const targetId = link.getAttribute('href').slice(1);
-                    const target = document.getElementById(targetId);
-                    if (target) {
-                        target.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
-                    }
-                });
-            });
-
-        </script>
+    </script>
 </body>
 
 </html>

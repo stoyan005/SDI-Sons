@@ -4,12 +4,15 @@ html {
     scroll-behavior: smooth;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
 /* ! THIS IS FOR THE BODY */
 body {
     text-align: center;
     font-family: "Montserrat", sans-serif;
-    margin: 0;
     background-color: #bdcbde;
     color: #000000;
 }
@@ -57,6 +60,10 @@ body {
     transform: scale(1.1);
 }
 
+.menu-button a:hover {
+    background: none !important;
+}
+
 .logo img {
     max-height: 235px;
     width: auto;
@@ -81,30 +88,106 @@ body {
     transform: scale(1.1);
 }
 
+.navbar nav li svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .sidebar {
     position: fixed;
     top: 0;
     right: 0;
-    height: 100vh;
-    width: 200px;
-    z-index: 999;
-    background-color: rgba(255, 255, 255, 0.2);
+    height: 110vh;
+    width: 250px;
+    z-index: 9999;
     backdrop-filter: blur(10px);
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    display: none;
+    background-color: #e7e6e6;
+    box-shadow: -10px 0 20px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
+    list-style-type: none;
+    gap: 2rem;
+    padding-top: 1rem;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.sidebar.active {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .sidebar li {
-    width: 50%;
+    list-style-type: none;
 }
 
 .sidebar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    color: #000000;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    padding: 10px 10px;
+    text-decoration: none;
+    transition: all 0.4s ease;
 }
 
+.sidebar a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+
+.sidebar .contacts a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1270eb;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 10px 10px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: all 0.4s ease;
+}
+
+.sidebar .contacts a:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+    background-color: #215ba2;
+    transform: scale(1.1);
+}
+
+.sidebar .close-btn a:hover {
+    background: none;
+}
+
+.menu-button {
+    display: none;
+}
+
+@media(max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
+
+@media(max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
 
 
 /* ! THIS IS FOR ANIMATIONS */
