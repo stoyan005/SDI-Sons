@@ -81,6 +81,31 @@ body {
     transform: scale(1.1);
 }
 
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 200px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 50%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+
 
 /* ! THIS IS FOR ANIMATIONS */
 @keyframes floatInUp {
@@ -270,8 +295,8 @@ hr {
 .copyright {
     color: #ffffff;
     background-color: #39397c;
-    font-size: 0.6rem;
-    padding: 0.5rem;
+    font-size: 0.5rem;
+    padding: 1rem;
     max-width: 100%;
 }
 
@@ -310,7 +335,7 @@ hr {
 
 .footer_container strong {
     position: relative;
-    padding-right: 1rem;
+    padding-right: 2rem;
 }
 
 .footer_container .column p::after {
