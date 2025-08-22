@@ -98,7 +98,7 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    height: 110vh;
+    height: 100vh;
     width: 250px;
     z-index: 9999;
     backdrop-filter: blur(10px);
@@ -106,7 +106,6 @@ body {
     box-shadow: -10px 0 20px rgba(0, 0, 0, 0.2);
     transform: translateX(100%);
     opacity: 0;
-    pointer-events: none;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -180,16 +179,12 @@ body {
 
     .menu-button {
         display: block;
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-        z-index: 10001;
     }
 }
 
 @media(max-width: 400px) {
     .sidebar {
-        width: 10%;
+        width: 80%;
     }
 }
 
