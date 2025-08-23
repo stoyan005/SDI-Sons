@@ -336,7 +336,7 @@ hr {
 /* ! THIS IS FOR THE PHOTO GALLERY DISPLAY */
 .photo_container {
     display: grid;
-    max-width: 85%;
+    max-width: 80%;
     margin: 20px auto;
 }
 
