@@ -354,7 +354,7 @@ hr {
     display: block;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .photo_container {
         padding: 10px;
     }
