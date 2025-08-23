@@ -420,7 +420,7 @@ hr {
 }
 
 /* 🔽 Media Query for Mobile Devices */
-@media (max-width: 768px) {
+@media (max-width: 400px) {
     .footer_container {
         flex-direction: column;
         align-items: flex-start;
