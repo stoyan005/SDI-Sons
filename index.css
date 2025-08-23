@@ -336,8 +336,10 @@ hr {
 /* ! THIS IS FOR THE PHOTO GALLERY DISPLAY */
 .photo_container {
     display: grid;
-    max-width: 70%;
-    margin: 20px;
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .photo_container .image-container {
@@ -352,6 +354,22 @@ hr {
     display: block;
 }
 
+@media (max-width: 600px) {
+    .photo_container {
+        padding: 10px;
+    }
+
+    .photo_container .image-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .photo_container .image-container img {
+        border-radius: 10px;
+        height: auto;
+        max-width: 100%;
+    }
+}
 
 /* ! THIS IS FOR THE COPYRIGHT */
 .copyright {
@@ -360,6 +378,15 @@ hr {
     font-size: 0.5rem;
     padding: 1rem;
     max-width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 400px) {
+    .copyright {
+        font-size: 0.4rem;
+        padding: 0.75rem;
+        line-height: 1.2;
+    }
 }
 
 
