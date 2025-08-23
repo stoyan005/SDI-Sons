@@ -336,8 +336,8 @@ hr {
 /* ! THIS IS FOR THE PHOTO GALLERY DISPLAY */
 .photo_container {
     display: grid;
-    max-width: 80%;
-    margin: 20px auto;
+    max-width: 70%;
+    margin: 20px;
 }
 
 .photo_container .image-container {
@@ -362,7 +362,8 @@ hr {
     max-width: 100%;
 }
 
-/* ! THIS IS FOR THE FOOTER */
+
+/* ! THIS IS FOR THE FOOTER 
 .footer_container {
     display: flex;
     justify-content: space-between;
@@ -377,7 +378,6 @@ hr {
     overflow: hidden;
 }
 
-/* Footer logo image styling */
 .footer_logo img {
     max-width: 450px;
     object-fit: contain;
@@ -385,14 +385,12 @@ hr {
     height: auto;
 }
 
-/* Footer columns */
 .footer_container .column {
     margin: 1rem;
     min-width: 200px;
     flex: 1;
 }
 
-/* Paragraph styling */
 .footer_container .column p {
     position: relative;
     display: flex;
@@ -401,13 +399,11 @@ hr {
     max-width: max-content;
 }
 
-/* Strong text */
 .footer_container strong {
     position: relative;
     padding-right: 2rem;
 }
 
-/* Underline effect */
 .footer_container .column p::after {
     content: '';
     position: absolute;
@@ -420,7 +416,7 @@ hr {
     left: 0;
 }
 
-/* 🔽 Media Query for Mobile Devices */
+
 @media (max-width: 375px) {
     .footer_container {
         flex-direction: column;
@@ -450,3 +446,4 @@ hr {
         justify-content: flex-start;
     }
 }
+*/
