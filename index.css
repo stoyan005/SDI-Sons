@@ -30,7 +30,7 @@ body {
     padding: 0.5rem 1rem;
     border-radius: 50px;
     margin: 1rem;
-    height: 100px;
+    height: 6rem;
     top: 6px;
     overflow: hidden;
     z-index: 1000;
@@ -95,17 +95,19 @@ body {
     align-items: center;
 }
 
+/* ! THIS IS FOR THE SIDEBAR ON THE NAVBAR MOBILE RESPONSIVENESS */
 .sidebar {
+    display: none;
+    flex-direction: column;
     position: fixed;
     top: 0;
     right: 0;
     height: 100vh;
     width: 250px;
     background-color: #e7e6e6;
-    z-index: 1100;
-    display: none;
-    flex-direction: column;
-    padding: 2rem 1rem;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 1rem;
     box-shadow: -4px 0 12px rgba(0, 0, 0, 0.3);
     animation: slideIn 0.4s ease forwards;
 }
@@ -116,25 +118,48 @@ body {
 }
 
 .sidebar li a {
-    font-size: 1.2rem;
+    display: inline-block;
+    background-color: #e7e6e6;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 1.5rem;
     color: #000;
     text-decoration: none;
-    padding: 10px;
-    display: inline-block;
     transition: all 0.3s ease;
 }
 
 .sidebar li a:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+    background-color: #ebebeb;
+    transform: scale(1.1);
 }
 
-.sidebar .close-btn {
-    align-self: flex-end;
-    margin-bottom: 2rem;
+.sidebar .close-btn a {
+    background: none;
 }
 
-/* Animation */
+.sidebar .close-btn a:hover {
+    box-shadow: none;
+    background: none;
+}
+
+.sidebar .contacts a {
+    display: inline-block;
+    background-color: #1270eb;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: all 0.4s ease;
+}
+
+.sidebar .contacts a:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+    background-color: #215ba2;
+    transform: scale(1.1);
+}
+
 @keyframes slideIn {
     from {
         transform: translateX(100%);
@@ -145,7 +170,6 @@ body {
     }
 }
 
-/* Responsive: Hide menu-button on desktop, show on mobile */
 @media (max-width: 768px) {
     .hideOnMobile {
         display: none;
@@ -156,7 +180,6 @@ body {
     }
 }
 
-/* Desktop: hide sidebar and hamburger by default */
 @media (min-width: 769px) {
     .sidebar {
         display: none !important;
@@ -164,6 +187,14 @@ body {
 
     .menu-button {
         display: none;
+    }
+}
+
+@media (max-width: 320px) {
+    .logo img {
+        max-height: 180px;
+        width: auto;
+        display: block;
     }
 }
 
@@ -181,25 +212,14 @@ body {
     }
 }
 
-@keyframes floatInLeft {
+
+@keyframes slideIn {
     from {
-        opacity: 0;
-        transform: translateX(-50px);
+        transform: translateX(100%);
     }
 
     to {
-        opacity: 1;
         transform: translateX(0);
-    }
-}
-
-@keyframes floatInRight {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
     }
 }
 
@@ -352,6 +372,7 @@ hr {
     width: 100%;
     border-radius: 20px;
     display: block;
+    object-fit: cover;
 }
 
 @media (max-width: 800px) {
