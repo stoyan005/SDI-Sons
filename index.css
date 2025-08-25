@@ -170,7 +170,7 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
     .hideOnMobile {
         display: none;
     }
@@ -180,7 +180,7 @@ body {
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 770px) {
     .sidebar {
         display: none !important;
     }
@@ -192,7 +192,7 @@ body {
 
 @media (max-width: 320px) {
     .logo img {
-        max-height: 180px;
+        max-height: 170px;
         width: auto;
         display: block;
     }
