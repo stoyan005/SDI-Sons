@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="SDI_logo_transparent.webp" />
     <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet"
@@ -35,7 +36,7 @@
     </header>
 
     <ul class="sidebar">
-        <li class="close-btn" onclick=hideSidebar()><a href="#">
+        <li class="close-btn" onclick=hideSidebar(event)><a href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
                     fill="#000000">
                     <path d="m256-200-56-56 224-224-224-224 56-56 
@@ -49,114 +50,103 @@
     </ul>
 
 
-    <div class="section-services" id="services">
-        <div class="divider">Services</div>
+    <div class="section-services" id="services"></div>
+    <div class="divider">Services</div>
 
-        <div class="about-container">
-            <section class="about">
-                <div class="about-image">
-                    <img src="photos/roller_brush.jpg">
-                </div>
-                <div class="about-information">
-                    <h2>Our Company</h2>
-                    <p>we love paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love
-                        paintingwe
-                        love paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love paintingwe
-                        love
-                        paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love
-                        paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love painting love
-                    </p>
-                </div>
-            </section>
-        </div>
-        <div class="service-container">
-            <section class="service-about">
-                <div class="service-image">
-                    <img src="photos/paint_buckets.jpg">
-                </div>
-                <div class="service-information">
-                    <h2>Our Services</h2>
-                    <p>Our company specialises in high-quality renovations for houses, apartments, and commercial spaces
-                        of all
-                        sizes. Our services include painting, tiling, and the installation of stone floors in bathrooms,
-                        kitchens, bedrooms, and outdoor areas. Every project is handled with attention to detail,
-                        skilled craftsmanship, and a commitment to meeting deadlines. From minor touch-ups to full-scale
-                        remodeling. With a dedicated team that focuses on
-                        quality, durability, and design, we turn everyday spaces into something exceptional.
-                    </p>
-                </div>
-            </section>
-        </div>
-
-        <div id="gallery" class="divider">Gallery</div>
-
-        <section>
-            <div class="photo_container">
-                <div class="image-container">
-                    <img src="photos/photo1.webp" alt="photo 1">
-                    <img src="photos/photo2.webp" alt="photo 2">
-                    <img src="photos/photo3.webp" alt="photo 3">
-                    <img src="photos/photo4.webp" alt="photo 4">
-                    <img src="photos/photo5.webp" alt="photo 5">
-                    <img src="photos/photo6.webp" alt="photo 6">
-                    <img src="photos/photo7.webp" alt="photo 7">
-                    <img src="photos/photo8.webp" alt="photo 8">
-                    <img src="photos/photo9.webp" alt="photo 9">
-                    <img src="photos/photo10.webp" alt="photo 10">
-                    <img src="photos/photo11.webp" alt="photo 11">
-                    <img src="photos/photo12.webp" alt="photo 12">
-                </div>
+    <div class="about-container">
+        <section class="about">
+            <div class="about-image">
+                <img src="photos/roller_brush.jpg">
+            </div>
+            <div class="about-information">
+                <h2>Our Company</h2>
+                <p>we love paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love
+                    paintingwe
+                    love paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love paintingwe
+                    love
+                    paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love
+                    paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love painting love
+                </p>
             </div>
         </section>
+    </div>
+    <div class="service-container">
+        <section class="service-about">
+            <div class="service-image">
+                <img src="photos/paint_buckets.jpg">
+            </div>
+            <div class="service-information">
+                <h2>Our Services</h2>
+                <p>Our company specialises in high-quality renovations for houses, apartments, and commercial spaces
+                    of all
+                    sizes. Our services include painting, tiling, and the installation of stone floors in bathrooms,
+                    kitchens, bedrooms, and outdoor areas. Every project is handled with attention to detail,
+                    skilled craftsmanship, and a commitment to meeting deadlines. From minor touch-ups to full-scale
+                    remodeling. With a dedicated team that focuses on
+                    quality, durability, and design, we turn everyday spaces into something exceptional.
+                </p>
+            </div>
+        </section>
+    </div>
 
-        <div id="contacts" class="divider">Contacts</div>
+    <div id="gallery" class="divider">Gallery</div>
 
-        <section>
-            <footer class="footer_container">
-                <h2 class="footer-title">Contact Information</h2>
-                <div class="contact-info">
-                    <div class="info-row-border">
-                        <div class="info-row">
-                            <strong>Location:</strong>
-                            <span>East London</span>
-                        </div>
-                    </div>
-                    <div class="info-row-border">
-                        <div class="info-row">
-                            <strong>Phone Number:</strong>
-                            <span>+44 12345678</span>
-                        </div>
-                    </div>
-                    <div class="info-row-border">
-                        <div class="info-row">
-                            <strong>Email Address:</strong>
-                            <span>example@gmail.com</span>
-                        </div>
-                    </div>
-                    <div class="info-row-border">
-                        <div class="info-row">
-                            <strong>Working hours:</strong>
-                            <span>Available Every Day</span>
-                        </div>
+    <section>
+        <div class="photo_container">
+            <div class="image-container">
+                <img src="photos/photo1.webp" alt="photo 1">
+                <img src="photos/photo2.webp" alt="photo 2">
+                <img src="photos/photo3.webp" alt="photo 3">
+                <img src="photos/photo4.webp" alt="photo 4">
+                <img src="photos/photo5.webp" alt="photo 5">
+                <img src="photos/photo6.webp" alt="photo 6">
+                <img src="photos/photo7.webp" alt="photo 7">
+                <img src="photos/photo8.webp" alt="photo 8">
+                <img src="photos/photo9.webp" alt="photo 9">
+                <img src="photos/photo10.webp" alt="photo 10">
+                <img src="photos/photo11.webp" alt="photo 11">
+                <img src="photos/photo12.webp" alt="photo 12">
+            </div>
+        </div>
+    </section>
+
+    <div id="contacts" class="divider">Contacts</div>
+
+    <section>
+        <footer class="footer_container">
+            <h2 class="footer-title">Contact Information</h2>
+            <div class="contact-info">
+                <div class="info-row-border">
+                    <div class="info-row">
+                        <strong>Location:</strong>
+                        <span>East London</span>
                     </div>
                 </div>
-            </footer>
-        </section>
+                <div class="info-row-border">
+                    <div class="info-row">
+                        <strong>Phone Number:</strong>
+                        <span>+44 12345678</span>
+                    </div>
+                </div>
+                <div class="info-row-border">
+                    <div class="info-row">
+                        <strong>Email Address:</strong>
+                        <span>example@gmail.com</span>
+                    </div>
+                </div>
+                <div class="info-row-border">
+                    <div class="info-row">
+                        <strong>Working hours:</strong>
+                        <span>Available Every Day</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
 
-        <div class="copyright">
-            <h1>Copyright © 2025 Stoyan Ivanov. All Rights Reserved.</h1>
-        </div>
-
-        <script>
-            function showSidebar() {
-                document.querySelector('.sidebar').style.display = 'flex';
-            }
-
-            function hideSidebar() {
-                document.querySelector('.sidebar').style.display = 'none';
-            }
-        </script>
-
+    <div class="copyright">
+        <h1>Copyright © 2025 Stoyan Ivanov. All Rights Reserved.</h1>
+    </div>
 </body>
 
 </html>

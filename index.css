@@ -160,16 +160,6 @@ body {
     transform: scale(1.1);
 }
 
-@keyframes slideIn {
-    from {
-        transform: translateX(100%);
-    }
-
-    to {
-        transform: translateX(0);
-    }
-}
-
 @media (max-width: 770px) {
     .hideOnMobile {
         display: none;
@@ -259,8 +249,9 @@ body {
 }
 
 .about-information h2 {
-    display: flex;
-    font-size: 3rem;
+    text-align: left;
+    font-size: 2.5rem;
+    text-decoration: underline;
     margin: 1rem 0rem 2rem;
     color: #000000;
 }
@@ -309,7 +300,8 @@ body {
 
 .service-information h2 {
     text-align: right;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    text-decoration: underline;
     margin: 1rem 0rem 2rem;
     color: #000000;
 }
@@ -322,6 +314,41 @@ body {
     color: #000000;
 }
 
+@media (min-width: 320px) and (max-width: 1024px) {
+
+    .about,
+    .service-about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .about-image,
+    .service-image {
+        padding: 0rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .about-information,
+    .service-information {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .about-information h2,
+    .service-information h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .about-information p,
+    .service-information p {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+}
 
 /* ! THIS IS THE SECTIONS OF THE WEBSITE */
 .divider {
@@ -410,6 +437,7 @@ body {
     background-color: #e2e2e2;
     margin: 2rem auto;
     padding: 2rem;
+    margin-bottom: 4rem;
     border-radius: 20px;
     max-width: 600px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -418,7 +446,7 @@ body {
 .footer-title {
     display: inline-block;
     text-align: center;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     margin-bottom: 2rem;
     font-size: 2rem;
     font-weight: bold;
