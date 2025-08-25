@@ -431,7 +431,7 @@ hr {
     margin-bottom: 2rem;
     font-size: 2rem;
     font-weight: bold;
-    text-decoration: underline double;
+    text-decoration: underline;
 }
 
 .contact-info {
