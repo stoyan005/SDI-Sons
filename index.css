@@ -535,7 +535,7 @@ body {
 @media (max-width: 1024px) {
     .skills_container {
         margin: 1rem;
-        padding: 0.5rem;
+        padding: 1rem;
     }
 
     .skills_box {
