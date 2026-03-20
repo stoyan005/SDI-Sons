@@ -1,191 +1,223 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="SDI_logo_transparent.webp" />
+		<link rel="stylesheet" href="index.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap"
+			rel="stylesheet"
+		/>
+		<title>SDI & Sons Ltd. | Premium Renovation</title>
+	</head>
+	<body>
+		<header class="navbar">
+			<div class="logo">
+				<a href="#"><img src="photos/SDI_logo_transparent.webp" alt="SDI Logo" /></a>
+			</div>
+			<nav>
+				<ul class="nav_links">
+					<li><a href="#services">Services</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#gallery">Gallery</a></li>
+					<li><a href="#contacts" class="nav_quote">Get a Quote</a></li>
+				</ul>
+			</nav>
+		</header>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="SDI_logo_transparent.webp" />
-    <link rel="stylesheet" href="index.css" />
-    <script src="index.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" />
-    <title>SDI&Sons Ltd.</title>
-</head>
+		<section class="hero">
+			<div class="hero_content">
+				<h1>Excellence in Every Stroke</h1>
+				<p>
+					With over 15 years of master craftsmanship, we provide top-quality
+					painting, decorating, and renovation solutions across East London and the
+					wider London area.
+				</p>
+				<p>
+					Our team combines precision, creativity, and attention to detail to
+					transform homes, offices, and commercial spaces into stunning, functional
+					environments.
+				</p>
+				<a href="#contacts" class="hero_start">Start Your Project</a>
+			</div>
+		</section>
 
-<body>
-    <header class="navbar">
-        <div class="logo">
-            <a href="#"><img src="SDI_logo_transparent.webp" alt="Logo"></a>
-        </div>
+		<div id="services" class="section_title">Our Services</div>
 
-        <nav>
-            <ul>
-                <li class="hideOnMobile"><a href="#services">Services</a></li>
-                <li class="hideOnMobile"><a href="#skills">Skills</a></li>
-                <li class="hideOnMobile"><a href="#gallery">Gallery</a></li>
-                <li class="contacts hideOnMobile"><a href="#contacts">Contacts</a></li>
-                <li class="menu-button" onclick=showSidebar()>
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -1000 960 960"
-                            width="40px" fill="#000000">
-                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                        </svg></a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+		<section class="info_block">
+			<div class="info_grid">
+				<div class="info_image">
+					<img src="photos/roller_brush.jpg" alt="Painting in progress" />
+				</div>
+				<div class="info_text">
+					<h2>Our Company</h2>
+					<p>
+						At SDI & Sons, we believe a home is more than just four walls—it’s a
+						reflection of your lifestyle and taste. That’s why we approach every
+						project with care, professionalism, and the respect it deserves. From
+						luxury painting and decorating to full-scale renovations, we deliver
+						high-end finishes that not only look stunning but stand the test of
+						time.
+					</p>
+					<p>
+						Whether it’s a modern update, a classic makeover, or a complete
+						transformation, SDI & Sons is committed to turning your vision into
+						reality with elegance, reliability, and care.
+					</p>
+				</div>
+			</div>
+		</section>
 
-    <ul class="sidebar">
-        <li class="close-btn" onclick=hideSidebar(event)><a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
-                    fill="#000000">
-                    <path d="m256-200-56-56 224-224-224-224 56-56 
-                    224 224 224-224 56 56-224 224 
-                    224 224-56 56-224-224-224 224Z" />
-                </svg>
-            </a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li class="contacts"><a href="#contacts">Contacts</a></li>
-    </ul>
+		<section class="info_block reverse">
+			<div class="info_grid">
+				<div class="info_image">
+					<img src="photos/paint_buckets.jpg" alt="Quality materials" />
+				</div>
+				<div class="info_text">
+					<h2>Expert Solutions</h2>
+					<p>
+						From modern apartments to large-scale commercial projects, we offer
+						specialized services in painting, tiling, and stone flooring designed
+						to enhance every space. Whether upgrading a kitchen, refreshing a
+						bathroom, or undertaking a full renovation, our team brings expertise,
+						careful planning, and top-quality materials to every job, delivering
+						results that combine style, functionality, and lasting impact.
+					</p>
+					<p>
+						Combining durability, style, and expert craftsmanship, we deliver
+						projects that showcase our commitment to quality, creating spaces that
+						are both beautiful and built to last.
+					</p>
+				</div>
+			</div>
+		</section>
 
+		<section class="skill_section">
+			<div id="skills" class="section_title_skills">Expertise</div>
+			<div class="skills_intro">
+				<h3>15+ Years of Professional Experience</h3>
+				<p>
+					With over 15 years of hands-on experience, we excel in painting,
+					decorating, terracotta, and tile laying, delivering precision and attention
+					to detail on every project. Our Level 3 certifications reflect our
+					commitment to professional standards, ensuring high-quality finishes that
+					are both durable and visually striking.
+				</p>
+			</div>
+			<div class="skill_grid">
+				<div class="grid_item">
+					<div class="tile_icon">
+						<img src="icons/trophy-star.png" alt="Experience" />
+					</div>
+					<span class="tile_label">Experience</span>
+					<h3 class="service_name">15+ Years</h3>
+					<p class="service_text">
+						Professional industry experience delivering high-end finishes.
+					</p>
+				</div>
 
-    <div class="section_services" id="services"></div>
-    <div class="divider">Services</div>
+				<div class="grid_item">
+					<div class="tile_icon">
+						<img src="icons/certificate.png" alt="Certifications" />
+					</div>
+					<span class="tile_label">Certification</span>
+					<h3 class="service_name">Level 3</h3>
+					<p class="service_text">
+						Fully certified standards for painting and decorating excellence.
+					</p>
+				</div>
 
-    <div class="about_container">
-        <section class="about">
-            <div class="about_image">
-                <img src="photos/roller_brush.jpg">
-            </div>
-            <div class="about_information">
-                <h2>Our Company</h2>
-                <p>we love paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love
-                    paintingwe
-                    love paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love paintingwe
-                    love
-                    paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love
-                    paintingwe love paintingwe love paintingwe love paintingwe love paintingwe love painting love
-                </p>
-            </div>
-        </section>
-    </div>
-    <div class="service_container">
-        <section class="service_about">
-            <div class="service_image">
-                <img src="photos/paint_buckets.jpg">
-            </div>
-            <div class="service_information">
-                <h2>Our Services</h2>
-                <p>Our company specialises in high-quality renovations for houses, apartments, and commercial spaces
-                    of all
-                    sizes. Our services include painting, tiling, and the installation of stone floors in bathrooms,
-                    kitchens, bedrooms, and outdoor areas. Every project is handled with attention to detail,
-                    skilled craftsmanship, and a commitment to meeting deadlines. From minor touch-ups to full-scale
-                    remodeling. With a dedicated team that focuses on
-                    quality, durability, and design, we turn everyday spaces into something exceptional.
-                </p>
-            </div>
-        </section>
-    </div>
+				<div class="grid_item">
+					<div class="tile_icon">
+						<img src="icons/paint-roller.png" alt="Painting" />
+					</div>
+					<h3 class="service_name">Painting</h3>
+					<p class="service_text">
+						Interior and exterior applications with precision color matching.
+					</p>
+				</div>
 
-    <div id="skills" class="divider">Skills</div>
+				<div class="grid_item">
+					<div class="tile_icon"><img src="icons/shelf.png" alt="Decorating" /></div>
+					<h3 class="service_name">Decorating</h3>
+					<p class="service_text">
+						Comprehensive aesthetic solutions to enhance any architectural space.
+					</p>
+				</div>
 
-    <section>
-        <div class="skills_container">
-            <h3>With over 15+ years worth of experience, I manage every job with care, professionalism,
-                precision and
-                attention to detail to ensure the results are kept durable, visibly impressive and exceed the clients
-                expectations and satisfaction.</h3>
-            <div class="skills_box">
-                <div class="skills">
-                    <img src="icons/paint-roller.png" alt="Painting Icon" />
-                    <p>Painting</p>
-                </div>
-                <div class="skills">
-                    <img src="icons/shelf.png" alt="Decorating Icon" />
-                    <p>Decorating</p>
-                </div>
-                <div class="skills">
-                    <img src="icons/terracotta.png" alt="Terracotta Icon" />
-                    <p>Terracotta Laying</p>
-                </div>
-                <div class="skills">
-                    <img src="icons/tiles.png" alt="Tile Laying Icon" />
-                    <p>Tile Laying</p>
-                </div>
-                <div class="skills">
-                    <img src="icons/trophy-star.png" alt="Experience Icon" />
-                    <p>15+ Years Experience</p>
-                </div>
-                <div class="skills">
-                    <img src="icons/certificate.png" alt="Certificate Icon" />
-                    <p>Level 3 Painting & Decorating Certificate</p>
-                </div>
-            </div>
-        </div>
-    </section>
+				<div class="grid_item">
+					<div class="tile_icon">
+						<img src="icons/terracotta.png" alt="Terracotta" />
+					</div>
+					<h3 class="service_name">Terracotta</h3>
+					<p class="service_text">
+						Specialist terracotta laying and restoration with traditional
+						techniques.
+					</p>
+				</div>
 
-    <div id="gallery" class="divider">Gallery</div>
+				<div class="grid_item">
+					<div class="tile_icon">
+						<img src="icons/tiles.png" alt="Tile Laying" />
+					</div>
+					<h3 class="service_name">Tile Laying</h3>
+					<p class="service_text">
+						Expert installation of ceramic, porcelain, and natural stone tiles.
+					</p>
+				</div>
+			</div>
+		</section>
 
-    <section>
-        <div class="photo_container">
-            <div class="image_container">
-                <img src="photos/photo1.webp" alt="photo 1">
-                <img src="photos/photo2.webp" alt="photo 2">
-                <img src="photos/photo3.webp" alt="photo 3">
-                <img src="photos/photo4.webp" alt="photo 4">
-                <img src="photos/photo5.webp" alt="photo 5">
-                <img src="photos/photo6.webp" alt="photo 6">
-                <img src="photos/photo7.webp" alt="photo 7">
-                <img src="photos/photo8.webp" alt="photo 8">
-                <img src="photos/photo9.webp" alt="photo 9">
-                <img src="photos/photo10.webp" alt="photo 10">
-                <img src="photos/photo11.webp" alt="photo 11">
-                <img src="photos/photo12.webp" alt="photo 12">
-            </div>
-        </div>
-    </section>
+		<div id="gallery" class="section_title">Gallery</div>
 
-    <div id="contacts" class="divider">Contacts</div>
+		<section class="gallery_section">
+			<div class="gallery_grid">
+				<img src="photos/photo1.webp" alt="Work 1" />
+				<img src="photos/photo2.webp" alt="Work 2" />
+				<img src="photos/photo3.webp" alt="Work 3" />
+				<img src="photos/photo4.webp" alt="Work 4" />
+				<img src="photos/photo5.webp" alt="Work 5" />
+				<img src="photos/photo6.webp" alt="Work 6" />
+				<img src="photos/photo7.webp" alt="Work 7" />
+				<img src="photos/photo8.webp" alt="Work 8" />
+				<img src="photos/photo9.webp" alt="Work 9" />
+				<img src="photos/photo10.webp" alt="Work 10" />
+				<img src="photos/photo11.webp" alt="Work 11" />
+				<img src="photos/photo12.webp" alt="Work 12" />
+			</div>
+		</section>
 
-    <section>
-        <footer class="footer_container">
-            <h2 class="footer_title">Contact Information</h2>
-            <div class="contact_info">
-                <div class="info_row_border">
-                    <div class="info_row">
-                        <strong>Location:</strong>
-                        <span>East London</span>
-                    </div>
-                </div>
-                <div class="info_row_border">
-                    <div class="info_row">
-                        <strong>Phone Number:</strong>
-                        <span>+44 12345678</span>
-                    </div>
-                </div>
-                <div class="info_row_border">
-                    <div class="info_row">
-                        <strong>Email Address:</strong>
-                        <span>example@gmail.com</span>
-                    </div>
-                </div>
-                <div class="info_row_border">
-                    <div class="info_row">
-                        <strong>Working hours:</strong>
-                        <span>Available Every Day</span>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </section>
+		<footer id="contacts" class="footer">
+			<div class="footer_card">
+				<h2>Contact Us</h2>
+				<div class="contact_list">
+					<div class="contact_item">
+						<strong>Location:</strong>
+						<span>Based in East London, Serving All of London</span>
+					</div>
+					<div class="contact_item">
+						<strong>Phone:</strong>
+						<span>+44 1234 567 890</span>
+					</div>
+					<div class="contact_item">
+						<strong>Email:</strong>
+						<span>example@gmail.com</span>
+					</div>
+					<div class="contact_item">
+						<strong>Hours:</strong>
+						<span>Open 7 Days a Week</span>
+					</div>
+				</div>
+			</div>
+			<div class="copyright_bar">
+				<p>Copyright © <span id="year"></span> Stoyan Ivanov. All Rights Reserved.</p>
+			</div>
+		</footer>
 
-    <div class="copyright">
-        <h1>Copyright © 2025 Stoyan Ivanov. All Rights Reserved.</h1>
-    </div>
-</body>
-
+		<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+		<script src="index.js"></script>
+	</body>
 </html>
