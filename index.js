@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-	const quoteBtn = document.querySelector('.nav_quote');
+	const quoteBtn = document.querySelector('.nav_contact');
 
 	quoteBtn.addEventListener('click', (e) => {
 		e.preventDefault();
@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		// Get exact button position
 		const rect = quoteBtn.getBoundingClientRect();
 
-		// Calculate normalized coordinates (0 to 1)
 		// Center of the button
 		const originX = (rect.left + rect.width / 2) / window.innerWidth;
 		const originY = (rect.top + rect.height / 2) / window.innerHeight;
@@ -25,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					colors: ['#ffffff', '#008000', '#ff0000ed'],
 					disableForReducedMotion: true,
 				});
-			}, i * 100);
+			}, i * 1);
 		}
 
 		// Smooth scroll to footer
